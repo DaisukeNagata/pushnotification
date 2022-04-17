@@ -15,7 +15,7 @@ Flutter
  firebase_messaging: 最新
  flutter_local_notifications: 最新
   
- 画像を使用す場合をURLから動的に使用する場合に使用
+ 画像を使用する場合をURLから動的に使用する場合に使用
  path_provider:
  http:
 ```
