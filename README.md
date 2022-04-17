@@ -2,15 +2,57 @@
 
 A new Flutter project.
 
-## Getting Started
+## Environment
 
-This project is a starting point for a Flutter application.
+```
+　FCN
+　Android Embedding V2
 
-A few resources to get you started if this is your first Flutter project:
+  Flutter
+  sdk: ">=2.16.2 <3.0.0"
+  
+  pubspec.yaml
+  firebase_messaging: 最新
+  flutter_local_notifications:　最新
+  
+  画像を使用す場合をURLから動的に使用する場合に使用
+  path_provider:
+  http:
+```
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Document
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### *画像について imageurlの画像取得はドキュメント通りに実施しても対応できなかった*
+
+ネットには画像を動的に変更する方法は見つからなかったが、対応方法を見つけたので動画挙動のみ公開。
+
+AndroidとiOSの　PackageとbundleIdをCLIツールで認証させる。
+```
+$ dart pub global activate flutterfire_cli
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+flutterfire configure
+
+```
+
+リンクの公式ドキュメント通り、Firebaseの登録、iOSの証明書等の登録は手順通り実施。　
+コードはSampleコードで認証、読み込みできれば動作、確認できます。
+https://firebase.flutter.dev/docs/messaging/overview/
+
+## Example Android
+
+通知バナーを表示する場合、設定画面から許可が必要。(実機ならパーミッション出るかもしれない)
+パーミッション設定の対応未確認。
+スケジュール通知予約可能。
+通知をする場合の必須実装はmanifestなどにはない。
+スリープモードでも動作確認
+https://user-images.githubusercontent.com/16457165/163711926-b8baa6ad-a8d6-417d-961c-8f24939d25d8.mov
+
+
+## Example iOS
+設定画面などで許可は不要
+バックグラウンドではiconは表示しませんでした。確認中
+https://github.com/firebase/flutterfire/issues/8352#issuecomment-1100660846
+スケジュール通知予約可能
+スリープモードでも動作確認
+https://user-images.githubusercontent.com/16457165/163711933-aa3f9300-40ed-408d-94fc-4e30ba4d3972.mov
+
