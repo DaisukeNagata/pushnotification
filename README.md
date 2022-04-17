@@ -1,6 +1,6 @@
 # pushnotification
 
-A new Flutter project.
+Firebaseの実装手順、動的に画像設定方法は今は非公開にしてます。
 
 ## Environment
 
