@@ -5,19 +5,19 @@ Firebaseの実装手順、動的に画像設定方法は今は非公開にして
 ## Environment
 
 ```
-　FCN
-　Android Embedding V2
+FCN
+ Android Embedding V2
 
-  Flutter
-  sdk: ">=2.16.2 <3.0.0"
+Flutter
+ sdk: ">=2.16.2 <3.0.0"
   
-  pubspec.yaml
-  firebase_messaging: 最新
-  flutter_local_notifications:　最新
+ pubspec.yaml
+ firebase_messaging: 最新
+ flutter_local_notifications: 最新
   
-  画像を使用す場合をURLから動的に使用する場合に使用
-  path_provider:
-  http:
+ 画像を使用す場合をURLから動的に使用する場合に使用
+ path_provider:
+ http:
 ```
 
 ## Document
@@ -29,8 +29,8 @@ Firebaseの実装手順、動的に画像設定方法は今は非公開にして
 AndroidとiOSの　PackageとbundleIdをCLIツールで認証させる。
 ```
 $ dart pub global activate flutterfire_cli
-export PATH="$PATH":"$HOME/.pub-cache/bin"
-flutterfire configure
+$ export PATH="$PATH":"$HOME/.pub-cache/bin"
+$ flutterfire configure
 
 ```
 
