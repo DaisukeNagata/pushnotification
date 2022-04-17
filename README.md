@@ -45,7 +45,10 @@ https://firebase.flutter.dev/docs/messaging/overview/
 スケジュール通知予約可能。
 通知をする場合の必須実装はmanifestなどにはない。
 スリープモードでも動作確認
-https://user-images.githubusercontent.com/16457165/163711926-b8baa6ad-a8d6-417d-961c-8f24939d25d8.mov
+
+
+https://user-images.githubusercontent.com/16457165/163712672-a031f7bf-e9f0-4751-b13c-61322a9a7a54.mov
+
 
 
 ## Example iOS
@@ -54,5 +57,11 @@ https://user-images.githubusercontent.com/16457165/163711926-b8baa6ad-a8d6-417d-
 https://github.com/firebase/flutterfire/issues/8352#issuecomment-1100660846
 スケジュール通知予約可能
 スリープモードでも動作確認
-https://user-images.githubusercontent.com/16457165/163711933-aa3f9300-40ed-408d-94fc-4e30ba4d3972.mov
+
+
+
+https://user-images.githubusercontent.com/16457165/163712689-906fda2a-f11a-4488-99fb-476fe3be3081.mov
+
+
+
 
